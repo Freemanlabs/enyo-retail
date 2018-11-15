@@ -1,3 +1,5 @@
+# Enyo Retail
+
 ## Prerequisite
 
 You will need Xampp Apache server installed on your system
@@ -10,8 +12,17 @@ After installing, start the apache and Mysql service from the xampp panel
 
 Create a folder in your local server's root directory (e.g C://xampp/htdocs/(folder) - for windows)
 
-Download source code
+Get the source code by either cloning this repository using git
 
-Place the downloaded source code in the folder created
+```
+git clone https://github.com/Freemanlabs/enyo-retail.git
+```
 
-Run http://localhost/(folder) from your browser
+... or [downloading source code](https://github.com/Freemanlabs/enyo-retail/archive/master.zip) code as a zip archive.
+
+Once downloaded, place the source code in the folder created
+
+Run 
+> http://localhost/(folder) 
+
+from your browser
