@@ -1,17 +1,17 @@
-Prerequisite
+## Prerequisite
 
-Xampp Apache server
+You will need Xampp Apache server installed on your system
 
-Direction
+## Setup
 
-Download and install Xampp apache server (It is recommended you used xampp as it works for Windows, Linux and Mac Os)
+Download and install [Xampp](https://www.apachefriends.org/download.html) apache server (Xampp is recommended)
 
 After installing, start the apache and Mysql service from the xampp panel
 
 Create a folder in your local server's root directory (e.g C://xampp/htdocs/(folder) - for windows)
 
-Clone or download repository
+Download source code
 
-Place the cloned or downloaded repository in the folder created
+Place the downloaded source code in the folder created
 
-Run localhost/(folder) from your browser
+Run http://localhost/(folder) from your browser
