@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Sliders -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="w-fonts.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="scrollbars/jquery.mCustomScrollbar.min.css">
+    
+    <!-- Photo Gallery Plugin -->
+    <link href="dist/css/lightgallery.css" rel="stylesheet">
+  	
+	<title>ENYO</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="language" content="en" />
+    <meta name="distribution" content="Global" />
+    <meta name="subject" content="Aluminium, Architecture, Contruction, Fenestration" />
+    <meta name="author" content="ENYO" />
+    <meta name="copyright" content="ENYO" />
+
+    <!-- SCOIAL SHARING CARDS HERE!! -->
+    <!-- Comment #1: OG Tags -->
+    <meta property="og:url" content="./" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="images/social/sa-share-banner.html" />
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="fav32.png">
+    <link rel="icon" type="image/png" href="fav32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="fav16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tabb.svg" color="#005f9b">
+    <meta name="theme-color" content="#005f9b">
+
+</head>
+<body>
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="slick/slick.js"></script>
+
+<!-- Preloader -->
+<div class="preloader pl-bg">
+    <div class="flexbox">
+        <div class="preloader-contents">
+			<div class="spinner">
+			  <div class="cube1"></div>
+			  <div class="cube2"></div>
+			</div>
+        </div>
+    </div>
+</div>
+
+<div id="darkBg" class="filter-screen"></div>
+
+<section class="bg-container">
+    <div class="mslider">
+        <div class="bg-item-container bg1"></div>
+        <div class="bg-item-container bg2"></div>
+        <div class="bg-item-container bg3"></div>
+        <div class="bg-item-container bg4"></div>
+        <div class="bg-item-container bg5"></div>
+    </div>
+</section>
+
+<!-- VIDEO BG - DESKTOP ONLY -->
+<div class="video-container filter">
+    <video loop id="bgvid" preload="metadata" style="filter: grayscale(1); opacity:0.2;">
+        <source src="vid/enyovid.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+    </video>
+	
+</div>
+
+<!-- PAGE TRANSITION -->
+
+<div class="top-curtain xyhalf spbg1 zi1"></div>
+<div class="bottom-curtain xyhalf spbg1 zi1"></div>
+
+<!-- NAVIGATION -->
+<nav>
+    <div id="navClose" class="xyfull posabs"></div>
+    <div class="flexbox">
+        <div class="nav-container xyauto posrel">
+            <ul id="navCon"></ul>
+            <div class="social-buttons">
+                <div class="sbtn"><a href="#" class="fb"><img src="images/svgs/facebook.svg"></a></div>
+                <div class="sbtn"><a href="#" class="in"><img src="images/svgs/linkedin.svg"></a></div>
+				<div class="sbtn"><a href="#" class="ig"><img src="images/svgs/instagram.svg"></a></div>
+                <div class="sbtn"><a href="#" class="tw"><img src="images/svgs/twitter.svg"></a></div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- FIXED STAGE ELEMENTS -->
+<div class="premode-alert">
+    <div class="flexbox">
+        <p>Preview Mode Off</p>
+    </div>
+</div>
+<!-- Menu Button -->
+<!-- Header Block -->
+<div class="btn-menu crs">
+    <div class="flexbox">
+        <div class="menu-display">
+            <img src="images/svgs/menu.svg">
+        </div>
+    </div>
+</div>
+<!-- Sage Logo -->
+<div class="header-logo">
+    <div class="sage-name2"><img src="images/pngs/ey-name.png"></div>
+    <div class="sage-slogan2"><img src="images/svgs/ey-slogan.svg"></div>
+</div>
+<!-- Social Options -->
+<div class="social-options">
+    <!--
+        <div class="social-nav">
+            <ul>
+                <li>Facebook</li>
+                <li>/</li>
+                <li>Twitter</li>
+                <li>/</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+    -->
+    <div class="sage-logo2"><img src="images/pngs/wlogo.png"></div>
+    
+</div>
+<!-- copyright -->
+<div class="copyright-wrapper">
+    <div class="copyright">
+	<!--div class="copyr">&copy; 2017 Copyright ENYO, All Right Reserved.</div-->
+	<img src="images/svgs/copyr.svg">
+    </div>
+    <div class="bottom-stroke"></div>
+</div>
+
+<!--div class="header-area"></div-->
+
+<!-- Start Button -->
+<div class="start-button crs">
+    <div class="scroll-up"></div>
+    <div class="scroll-down"></div>
+</div>
+<!-- Preview Mode Component -->
+<div class="preview-mode-container">
+    <div class="pm-arrow"></div>
+    <div class="pm-position">
+        <div class="pm-highlight">
+            <div class="flexbox">
+                <div class="pm-ball"></div>
+            </div>
+        </div>
+        <ul class="pm-bullets">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+			<li></li>
+        </ul>
+    </div>
+    <div class="pm-number">
+        <div class="screen-counter-wrapper">
+            <div class="static-number">0</div>
+            <div class="counter-number">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+                </ul>
+            </div>
+        </div>
+        <div class="static-number2">
+            <div class="sn2-1"></div>
+            <div class="sn2-2">09</div>
+        </div>
+        <div class="preview-timer-container">
+            <div class="pt-outer-bar">
+                <div class="pt-inner-bar"></div>
+            </div>
+            <div class="pt-controls">
+                <ul class="ptc-ul">
+                    <li>Preview mode</li>
+                    <li>/</li>
+                    <li class="pm-off crs" onclick="togglePreviewMode('off')">off</li>
+                    <li>/</li>
+                    <li class="pm-on crs" onclick="togglePreviewMode('on')">on</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- HOME / START -->
+<section class="panel home-slice" data-section-name="Home">
+<div class="flexbox">
+    <article class="about-wrapper">
+	<div class="home-container">
+            <h1 class="hmabout">ENERGY FOR YOU</h1>
+						
+			<div class="homewrap">
+			
+            <p class="par-2">			
+                As a customer focused technology driven fuels retailing company, ENYO provides best-in-class retail experiences, leveraging complimentary brands and optimized return to investors.
+            <br/><br/>
+                ENYO was established in 2016, following the growing liberalization and evolution of oil and gas industries in Nigeria and beyond.
+				Our primary focus is to integrate First-Level customer service experience with fuel retailing and renewable energy products in the Nigerian, African and Nationwide markets to create a whole new perspective.
+			<br/><br/>
+                Supported by established relationships with offices in Lagos, Abuja and Portharcourt, ENYO is well positioned to leverage local and regional expertise in the structuring of the key tenets of the Nigerian fuels retailing industry.
+			<br/><br/>
+                With dedicated core of highly experienced professionals, ENYO has proven capabilities in every facet of the fuel retailing, energy, technology and consumer business.
+			</p>
+			</div>
+			
+			
+            <!--div class="read-button" onclick="getUrlPath('about/');">
+                <div class="flexbox">
+                    <p>Read More</p>
+                </div>
+            </div-->
+	</div>
+			
+	</article>
+</div>
+</section>
+<!-- ABOUT SECTION -->
+<section class="panel home-slice" data-section-name="About">
+    <div class="flexbox">
+        <article class="about-wrapper">
+		<div class="home-container">
+            <h1 class="hmabout">OUR BUSINESS</h1>
+			<div class="homewrap">
+            <p class="par-2">
+                ERS is the result of an unrelenting desire to expand our trademark professionalism and expertise in the downstream energy space to the last mile consumer thereby creating one of the most exciting fuels retail brands in the Country. 
+				<br/><br/>In addition, we will leverage the excellence of our partners in the terminal business (FEL), international supply business ENYO Trading (ET) and ERS to create a value chain that is difficult to replicate in the Nigerian market.
+				</p>
+			</div>
+            <!--div class="read-button" onclick="getUrlPath('about/index.html');">
+                <div class="flexbox">
+                    <p>Read More</p>
+                </div>
+            </div-->
+			</div>
+        </article>
+    </div>
+</section>
+<!-- WORK -->
+<section class="panel home-slice" data-section-name="Work">
+    <div class="flexbox">
+        <article class="about-wrapper-home">
+            
+            <div class="feature1">
+                <img src="images/pngs/spacer-work.png">
+                <div class="feature-pic1"></div>
+            </div>
+            <div class="feature2">
+                <img src="images/pngs/spacer-work.png">  
+                <div class="feature-pic2"><div class="dark-band"></div></div>
+            </div>
+            <div class="feature-title">
+                <div class="ft-wrapper-right">
+                    <!--div class="pr-title-des">
+                        <ul>
+                            <li>VEHICLE MAINTENANCE AND CONCIERGE SERVICES</li>
+                            <li>ONE-STOP LIFESTYLE HUB</li>
+                            <li>superior liquified gas</li>
+                            <li>b2b-es</li>
+                            <li>hhh</li>
+                        </ul>
+                    </div-->
+                    <div class="wr-title-name">
+                        <ul>                            
+							<li>our people</li>
+							<li>our people</li>
+							<li>our people</li>
+							<li>our people</li>
+                            <!--li>reelax</li>
+                            <li>slgas</li>
+                            <li>business to business</li>
+                            <li>ttt</li-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="ft-scroll">
+                    <!--div class="fts-button arrow-up" onclick="checkPreviewMode();getFeaturedWork('up')"></div>
+                    <div class="fts-button arrow-down" onclick="checkPreviewMode();getFeaturedWork('down')"></div-->
+                    <div class="fts-button arrow-launch" onclick="getUrlPath('people.html')"></div>
+                </div>
+            </div>
+            <div class="feature-position">
+                <div class="ft-wrapper">
+                    <div class="pr-title-name2">
+                        <ul>
+                            <li>1/1 Featured People</li>
+                            <!--li>2/4 Featured Work</li>
+                            <li>3/4 Featured Work</li>
+                            <li>4/4 Featured Work</li-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!--OE-->
+<section class="panel home-slice" data-section-name="Excellence">
+    <div class="flexbox">
+        <article class="about-wrapper">
+			<!--h1 style="width:75%; color:#fff;">ENYO PATH TO <br/>OPERATIONAL EXCELLENCE.</h1-->
+            <h1 class="hmabout">OPERATIONAL EXCELLENCE</h1>
+            <p class="par-1">
+                The world is evolving exponentially and the industry should evolve with it.
+			</p>
+            <p class="par-1">
+                Driven by technological advances and growing consumer demands, we are creating a seamless way to carry out retail operations. 
+				New technology has been introduced to enable more effective and innovative downstream business activities across the value chain. 
+				For consumers its a whole new world of uninterrupted, personalised service that truly meets their needs in ways never previously possible.
+			</p>
+            <div onclick="getUrlPath('oe.html');">
+				<span class="button btnFloat btnBlueGreen"></span>
+                    
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="panel home-slice" data-section-name="Value">
+    <div class="flexbox">
+        <article class="about-wrapper">
+            <h1 class="hmabout" style="text-align:center;">OUR VALUES</h1>
+            <p class="card-text" style="text-align:center;">
+                Our company's foundation is built on our values which differntiates us and shapes our actions to deliver optimally
+			</p>
+			
+				<div class="card-deck">
+					  <div class="card">
+						<!--img class="card-img-top" src="..." alt="Card image cap"-->
+						<div class="circle">
+							<div class="content">
+								<span><img src="icons/1.png"></span>
+							</div>
+						</div>
+						<div class="card-block">
+						  <h4 class="card-title">TEAMWORK</h4>
+						  <p class="card-text">The ability to develop synergies at the work place and derive positive outcomes from the synthesis of our individual diffeneces.</p>
+						  </div>
+					  </div>
+					  <div class="card">
+						<!--img class="card-img-top" src="..." alt="Card image cap"-->
+						<div class="circle">
+							<div class="content">
+								<span><img src="icons/2.png"></span>
+							</div>
+						</div>
+						<div class="card-block">
+						  <h4 class="card-title">INNOVATION</h4>
+						  <p class="card-text">A transformative mindset, with deep interest in delivering outcomes never thought possible.</p>
+						  </div>
+					  </div>
+					  <div class="card">
+						<!--img class="card-img-top" src="..." alt="Card image cap"-->
+						<div class="circle">
+							<div class="content">
+								<span><img src="icons/3.png"></span>
+							</div>
+						</div>
+						<div class="card-block">
+						  <h4 class="card-title">POSITIVE ENERGY</h4>
+						  <p class="card-text">The ability to be consistently resilient.</p>
+						  </div>
+					  </div>
+					</div>					
+			
+        </article>
+    </div>
+</section>
+
+<section class="panel home-slice" data-section-name="Blueprint">
+    <div class="flexbox">
+        <article class="about-wrapper">
+            <h1 class="hmabout top" style="text-align:center;">THE ENYO BLUEPRINT</h1>
+            <!--p class="card-text" style="text-align:center;">
+                Our company's foundation is built on our values which differntiates us and shapes our actions to deliver optimally
+			</p-->
+			
+				<div class="card-deck">
+					  <div class="card">
+						<!--img class="card-img-top" src="..." alt="Card image cap"-->
+						<div class="circle">
+							<div class="content">
+								<span><img src="icons/6.png"></span>
+							</div>
+						</div>
+						<div class="card-block ip5-block">
+						  <h4 class="card-title">PEOPLE</h4>
+						  <p class="card-text">Invest in people to develop and empower a highly-competent workforce that delivers results the right way.</p>
+						  </div>
+					  </div>
+					  <div class="card">
+						<!--img class="card-img-top" src="..." alt="Card image cap"-->
+						<div class="circle">
+							<div class="content">
+								<span><img src="icons/5.png"></span>
+							</div>
+						</div>
+						<div class="card-block ip5-block">
+						  <h4 class="card-title">EXECUTION</h4>
+						  <p class="card-text">Deliver results through teamwork, innovation, positive energy and disciplined operational excellence.</p>
+						  </div>
+					  </div>
+					  <div class="card">
+						<!--img class="card-img-top" src="..." alt="Card image cap"-->
+						<div class="circle">
+							<div class="content">
+								<span><img src="icons/1.png"></span>
+							</div>
+						</div>
+						<div class="card-block ip5-block">
+						  <h4 class="card-title">GROWTH</h4>
+						  <p class="card-text">Grow profits and returns by strategic investments and leveraging on the expertise of our international partners.</p>
+						  </div>
+					  </div>
+					  <div class="card">
+						<!--img class="card-img-top" src="..." alt="Card image cap"-->
+						<div class="circle">
+							<div class="content">
+								<span><img src="icons/4.png"></span>
+							</div>
+						</div>
+						<div class="card-block ip5-block">
+						  <h4 class="card-title">TECHNOLOGY</h4>
+						  <p class="card-text">Differentiate performance through technology and investing in new innovative ideas in carrying out basic day to day operations.</p>
+						  </div>
+					  </div>
+					</div>					
+			
+        </article>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="panel home-slice" data-section-name="Products">
+    <div class="flexbox">
+        <article class="about-wrapper-home">
+            
+            <div class="service-container">
+                <div class="product1">
+                    <img src="images/pngs/spacer-work.png">
+                    <div class="product1-pic1"><div class="dark-band"></div></div>
+                </div>
+                <div class="product2">
+                    <img src="images/pngs/spacer-work.png">
+                    <div class="product2-pic1"></div>
+                </div>
+                <div class="feature-title2">
+                    <div class="ft-scroll">
+                        <div class="fts-button2 arrow-launch" onclick="getUrlPath('#')"></div>
+                        <div class="fts-button arrow-up" onclick="checkPreviewMode();rotateServices('up')"></div>
+                        <div class="fts-button arrow-down" onclick="checkPreviewMode();rotateServices('down')"></div>
+                    </div>
+                    <div class="ft-wrapper-left">
+                        <!--div class="pr-title-des3">
+                            <ul>
+                                <li>vehicle maintenance and concierge services</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div-->
+                        <div class="wr-title-name">
+                            <ul>
+                                <li>products</li>
+                                <li>products</li>
+								<li>products</li>
+								<li>products</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="feature-position2">
+                    <div class="ft-wrapper">
+                        <div class="pr-title-name4">
+                            <ul>
+                                <li>1/4 Featured Products</li>
+                                <!--li>2/4 Featured Products</li>
+                                <li>3/4 Featured Products</li>
+                                <li>4/4 Featured Products</li-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </article>
+    </div>
+</section>
+<section class="panel home-slice" data-section-name="Board">
+    <div class="flexbox">
+        <article class="about-wrapper">
+		<div class="home-container2">
+            <h1 class="hmabout" style="text-align:center; margin-top:-20px;">THE BOARD</h1>
+            <p class="card-text" style="text-align:center; margin-top:-20px;">
+                Our board is hinged on vast wealth of experience and first class expertise in their various field.
+			</p>
+
+				
+				<div class="homewrap2">
+				<div class="card-deck">
+					  <div class="card">
+						<!--img class="card-img-top" src="..." alt="Card image cap"-->
+								
+								<img class="cardimg" src="icons/c.png">
+								<div class="card-block mcard-block">
+						  <h4 class="card-title" >Tunde Folawiyo</h4>
+						  <p class="card-text">Chairman</p>
+						  </div>	
+					  </div>
+					  
+					  <div class="card">
+						<!--img class="card-img-top" src="..." alt="Card image cap"-->
+								<img class="cardimg" src="icons/a.png">
+							<div class="card-block mcard-block">
+						  <h4 class="card-title">Bayo Folawiyo</h4>
+						  <p class="card-text">Non-Executive Director</p>
+						  
+						  </div>
+					  </div>
+					  <div class="card">
+						<!--img class="card-img-top" src="..." alt="Card image cap"-->
+								<img class="cardimg" src="icons/b.png">
+							<div class="card-block mcard-block">
+						  <h4 class="card-title">Alex Beard</h4>
+						  <p class="card-text">Non-Executive Director</p>
+						  </div>
+					  </div>
+					  <div class="card">
+						<!--img class="card-img-top" src="..." alt="Card image cap"-->
+								<img class="cardimg" src="icons/d.png">
+							<div class="card-block mcard-block">
+						  <h4 class="card-title">Warren Blount</h4>
+						  <p class="card-text">Non-Executive Director</p>
+						  </div>
+					  </div>
+					  <div class="card">
+						<!--img class="card-img-top" src="..." alt="Card image cap"-->
+								<img class="cardimg" src="icons/e.png">
+							<div class="card-block mcard-block">
+						  <h4 class="card-title">Abayomi Awobokun</h4>
+						  <p class="card-text">Director / CEO</p>
+						  </div>
+					  </div>
+				</div>
+				</div>
+				</div>
+			
+        </article>
+    </div>
+</section>
+<!-- Clients -->
+<!--section class="panel home-slice" data-section-name="Clients">
+    <div class="flexbox">
+        <article class="about-wrapper-home">
+            <h1 class="hmabout">Clients</h1>
+            
+            <div class="client-container-home">
+                <div class="slider">
+                    <div class="clients-box">
+                        <div class="cb-item" style="background-image:url('images/clients/cl-atvantage.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-coct.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-cput.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-dhk.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-freshfood.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-grand.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-group5.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-life.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-lk.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-multiqs.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        
+                    </div>
+                    <div class="clients-box">
+                        <div class="cb-item" style="background-image:url('images/clients/cl-murry.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-prasa.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-redefine.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-saota.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-sbds.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-seattle.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-signatura.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-standard.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-stonehill.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        <div class="cb-item" style="background-image:url('images/clients/cl-woolworths.svg')"><img src="images/pngs/spacer-350x350.png"></div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </article>
+    </div>
+</section-->
+
+<!-- CONTACT -->
+<section class="panel home-slice" data-section-name="Contact">
+    <div class="flexbox">
+        <article class="about-wrapper">
+            <h1 class="hmabout">Contact Us</h1>
+            <p class="par-1">
+                 0809 196 2222
+            </p>
+            <p class="par-1">
+                37A Awudu Ekpehea Street,<br>
+				Off Admiralty Way,<br>
+				Lekki Phase 1,<br>
+				Lagos, Nigeria.
+            </p>
+				<div  onclick="getUrlPath('contact/');">
+				
+				<a class="button btnFloat2 btnBlueGreen"></a>
+                    
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- custom scrollbar plugin -->
+<script src="scrollbars/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="scrollify/jquery.scrollify.js"></script>
+<script src="dist/js/lightgallery.js"></script>
+<script src="dist/js/lg-fullscreen.js"></script>
+<script src="js/main.js"></script>
+<!-- Audio - Howler -->
+<script src="js/howler.js"></script>
+
+
+</body>
+
+</html>

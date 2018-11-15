@@ -1,0 +1,41 @@
+/* Imports */
+@import url("font.css");
+
+html,body 
+{ 
+	width: 100%;
+    height: auto;
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+    overflow: hidden;
+}
+
+.pl-loader
+{
+	font-family: Segoe UI Semibold;	
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #000000;
+}
+/*Freeman*/
+.pl-header{
+	font-family: Segoe UI Bold;
+	text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #000000;
+	
+}
+
+.pl-info{
+	font-family: Segoe UI Italic;
+    font-size: 10px;
+    font-weight: 00;
+	font-size: 34px;
+    letter-spacing: 1px;
+    color: #000000;
+}

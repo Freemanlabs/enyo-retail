@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Products>
+	<Product>
+		<Title>Example</Title>
+		<Sub>Eg</Sub>
+		<Description> This is a</Description>
+		<Images>images/products/car.jpg</Images>
+	</Product>
+	<Product>
+		<Title>Example</Title>
+		<Sub>Eg</Sub>
+		<Description> This is a</Description>
+		<Images>images/products/car.jpg</Images>
+	</Product>
+</Products

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="20px" height="60px" viewBox="0 -25 20 60" enable-background="new 0 -25 20 60" xml:space="preserve">
+<rect x="2.75" y="-0.551" fill="#7C7B7B" width="14.834" height="1"/>
+<rect x="2.75" y="4.449" fill="#7C7B7B" width="14.834" height="1"/>
+<rect x="2.75" y="9.449" fill="#7C7B7B" width="14.834" height="1"/>
+<g>
+	<path fill="none" stroke="#00075c" stroke-width="1" stroke-linejoin="bevel" d="m 2.8,-10 14.8,0"/>
+    <path fill="none" stroke="#00075c" stroke-width="1" stroke-linejoin="bevel" d="m 2.8,-15 14.8,0"/>
+    <path fill="none" stroke="#00075c" stroke-width="1" stroke-linejoin="bevel" d="m 2.8,-20 14.8,0"/>
+</g>
+<polygon fill="#00075c" points="15.666,20.041 14.959,19.334 10,24.293 5.041,19.334 4.334,20.041 9.293,25 4.334,29.959 
+	5.041,30.666 10,25.707 14.959,30.666 15.666,29.959 10.707,25 "/>
+</svg>

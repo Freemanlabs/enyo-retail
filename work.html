@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Sliders -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="scrollbars/jquery.mCustomScrollbar.min.css">
+    
+    <!-- Photo Gallery Plugin -->
+    <link href="dist/css/lightgallery.css" rel="stylesheet">
+  	
+	<title>ENYO</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="language" content="en" />
+    <meta name="distribution" content="Global" />
+    <meta name="subject" content="Aluminium, Architecture, Contruction, Fenestration" />
+    <meta name="author" content="ENYO" />
+    <meta name="copyright" content="ENYO" />
+
+    <!-- SCOIAL SHARING CARDS HERE!! -->
+    <!-- Comment #1: OG Tags -->
+    <meta property="og:url" content="./" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="images/social/sa-share-banner.html" />
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="fav32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="fav16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#005f9b">
+    <meta name="theme-color" content="#005f9b">
+
+</head>
+<body>
+<style>
+    body{
+        background-color: #222;
+    }
+    .filter-screen {
+        opacity: 0.5;
+    }
+</style>
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="slick/slick.js"></script>
+
+<!-- Preloader -->
+<div class="preloader pl-bg">
+    <div class="flexbox">
+        <div class="preloader-contents">
+            <div class="pl-line1"></div>
+            <div class="pl-line2"></div>
+            <!--div class="pl-sage-logo"><img src="images/pngs/ey-logopc.png"></div>
+            <div class="pl-sage-slogan"><img src="images/svgs/ey-slogan.svg"></div-->
+			<div class="pl-header">Shifting Perception</div><br/>
+			<div class="pl-info">ENYO is a customer-focused, technology-driven, fuels retailing company.<br/>
+			Poised to deliver best-in-class retail experiences, leveraging complimentary brands <br/>and optimized returns to investors.</div>
+            <br/>
+			<div class="pl-loader">...intialising content</div>
+        </div>
+    </div>
+</div>
+
+<div id="darkBg" class="filter-screen"></div>
+
+<section class="bg-container-work">
+    <div class="cs-slider">
+        
+    </div>
+</section>
+
+
+<!-- PAGE TRANSITION -->
+
+<div class="top-curtain xyhalf spbg1 zi1"></div>
+<div class="bottom-curtain xyhalf spbg1 zi1"></div>
+
+<!-- NAVIGATION -->
+<nav>
+    <div id="navClose" class="xyfull posabs"></div>
+    <div class="flexbox">
+        <div class="nav-container xyauto posrel">
+            <ul id="navCon"></ul>
+            <div class="social-buttons">
+                <div class="sbtn"><a href="#"><img src="images/svgs/facebook.svg"></a></div>
+                <div class="sbtn"><a href="#"><img src="images/svgs/linkedin.svg"></a></div>
+				<div class="sbtn"><a href="#"><img src="images/svgs/instagram.svg"></a></div>
+                <div class="sbtn"><a href="#"><img src="images/svgs/twitter.svg"></a></div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- FIXED STAGE ELEMENTS -->
+<div class="premode-alert">
+    <div class="flexbox">
+        <p>Preview Mode Off</p>
+    </div>
+</div>
+<!-- Work Button -->
+<div class="view-button" onclick="transWorkSections('work1');">
+    <div class="flexbox">
+        <p>view work</p>
+    </div>
+</div>
+<div class="project-button" style="display:none;">
+    <div class="pbtn1" onclick="toggleWork('up');"></div>
+    <div class="pbtn2" onclick="toggleWork('down');"></div>
+    <div class="pbtn3" onclick="toggleWork('back');"></div>
+</div>
+<!-- Menu Button -->
+<div class="btn-menu crs">
+    <div class="flexbox">
+        <div class="menu-display">
+            <img src="images/svgs/menu.svg">
+        </div>
+    </div>
+</div>
+<!-- Sage Logo -->
+<div class="header-logo">
+    <div class="sage-name2"><img src="images/pngs/ey-name.png"></div>
+    <div class="sage-slogan2"><img src="images/svgs/ey-slogan.svg"></div>
+</div>
+<!-- Social Options -->
+<div class="social-options">
+    <!--
+        <div class="social-nav">
+            <ul>
+                <li>Facebook</li>
+                <li>/</li>
+                <li>Twitter</li>
+                <li>/</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+    -->
+    <div class="sage-logo2"><img src="images/pngs/wlogo.png"></div>
+    
+</div>
+<!-- copyright -->
+<div class="copyright-wrapper">
+    <div class="copyright">
+        <img src="images/svgs/copyr.svg">
+    </div>
+    <div class="bottom-stroke"></div>
+</div>
+
+<!-- WORK -->
+
+<section class="work-slice">
+    <div class="work-wrapper">
+        <div class="flexbox">
+            <div class="bh-wrapper">
+                <p class="big-header">Portfolio</p>
+            </div>
+        </div>
+        <div class="rotate-projects">
+            <div class="animate-text1"><p class="t-copy smbold">The Towers</p></div>
+            <div class="animate-line"></div>
+            <div class="animate-text2"><p class="l-copy">CBD, Cape Town, South Africa</p></div>
+        </div>
+    </div>
+</section>
+<section class="work-slice">
+    
+    <div class="project-container">
+    
+        <div class="prowrap">
+            <!-- Projects -->
+            <div class="projects-info-box">
+                <!--
+                <div class="cs-header">
+                    <div class="cs-sub"><p></p></div>
+                    <div class="cs-title"><p></p></div>
+                </div>
+                -->
+                <div class="cs-details">
+                    <div class="csd-entry">
+                        <div class="csd-info">
+                            <div class="flexbox">
+                                <div class="cs-box textcolor">
+                                    <p class="pb-sub1">Lifestyle & Business Center</p>
+                                    <p class="pb-title1 smbold"></p>
+                                    <div class="cs-info cs-location"><p></p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="csd-pic"><img src="images/pngs/spacer-320x210.png"></div>
+                    </div>
+                    <div class="csd-entry frev">
+                        <div class="csd-info">
+                            <div class="flexbox">
+                                <div class="cs-box">
+                                    <div class="cs-box-head"><p>Description</p></div>
+                                    <div class="cs-info cs-des"><p></p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="csd-pic"><img src="images/pngs/spacer-320x210.png"></div>
+                    </div>
+                    <div class="csd-entry">
+                        <div class="csd-info">
+                            <div class="flexbox">
+                                <div class="cs-box">
+                                    <div class="cs-box-head"><p>Architects</p></div>
+                                    <div class="cs-info cs-arch"><p></p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="csd-pic"><img src="images/pngs/spacer-320x210.png"></div>
+                    </div>
+                    <div class="csd-entry frev">
+                        <div class="csd-info">
+                            <div class="flexbox">
+                                <div class="cs-box">
+                                    <div class="cs-box-head"><p>Project Value</p></div>
+                                    <div class="cs-info cs-value"><p></p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="csd-pic"><img src="images/pngs/spacer-320x210.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="work-slice">
+    <div class="case-study">
+        
+        
+    </div>
+</section>
+
+<!-- custom scrollbar plugin -->
+<script src="scrollbars/jquery.mCustomScrollbar.concat.min.js"></script>
+<!--<script src="js/jquery-2.1.4.js"></script>-->
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="dist/js/lightgallery.js"></script>
+<script src="dist/js/lg-fullscreen.js"></script>
+<script src="js/work.js"></script>
+<!-- Audio - Howler -->
+<script src="js/howler.js"></script>
+
+</body>
+
+</html>

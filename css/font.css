@@ -1,0 +1,75 @@
+/*
+Explicitly define a Segoe UI font-family so that we can assign Segoe UI 
+Semilight to an appropriate font-weight.
+*/
+/*Calibri*/
+
+@font-face {
+    font-family: "Calibri";
+    font-weight: 200;
+    src: url("../fonts/calibri.ttf");
+}
+@font-face {
+    font-family: "Calibri Bold";
+    font-weight: 200;
+    src: url("../fonts/calibrib.ttf");
+}
+@font-face {
+    font-family: "Calibri Italic";
+    font-weight: 200;
+    src: url("../fonts/calibrii.ttf");
+}
+@font-face {
+    font-family: "Calibri Light";
+    font-weight: 200;
+    src: url("../fonts/calibril.ttf");
+}
+@font-face {
+    font-family: "Calibri Light Italic";
+    font-weight: 200;
+    src: url("../fonts/calibrili.ttf");
+}
+@font-face {
+    font-family: "Calibri Bold Italic";
+    font-weight: 200;
+    src: url("../fonts/calibriz.ttf");
+}
+
+/*Segoe UI*/
+@font-face {
+    font-family: "Segoe UI Light";
+    font-weight: 200;
+    src: url("../fonts/segoe-ui-light.ttf");
+}
+@font-face {
+    font-family: "Segoe UI Semilight";
+    font-weight: 300;
+    src: url("Segoe UI Semilight");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 400;
+    src: url("../fonts/segoe-ui.ttf");
+}
+@font-face {
+    font-family: "Segoe UI Semibold";
+    font-weight: 600;
+    src: url("../fonts/segoe-ui-semibold.ttf");
+}
+@font-face {
+    font-family: "Segoe UI Bold";
+    font-weight: 700;
+    src: url("../fonts/segoe-ui-bold.ttf");
+}
+@font-face {
+    font-family: "Segoe UI Italic";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/segoe-ui-italic.ttf");
+}
+@font-face {
+    font-family: "Segoe UI Bold Italic";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/segoe-ui-bolditalic.ttf");
+}
